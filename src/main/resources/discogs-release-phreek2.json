@@ -1,0 +1,672 @@
+{
+  "id": 3279134,
+  "status": "Accepted",
+  "year": 1978,
+  "resource_url": "https://api.discogs.com/releases/3279134",
+  "uri": "https://www.discogs.com/release/3279134-Patrick-Adams-Presents-Phreek-Patrick-Adams-Presents-Phreek",
+  "artists": [
+    {
+      "name": "Patrick Adams",
+      "anv": "",
+      "join": "Presents",
+      "role": "",
+      "tracks": "",
+      "id": 28602,
+      "resource_url": "https://api.discogs.com/artists/28602"
+    },
+    {
+      "name": "Phreek",
+      "anv": "",
+      "join": "",
+      "role": "",
+      "tracks": "",
+      "id": 55592,
+      "resource_url": "https://api.discogs.com/artists/55592"
+    }
+  ],
+  "artists_sort": "Patrick Adams Presents Phreek",
+  "labels": [
+    {
+      "name": "Atlantic",
+      "catno": "GM-200.2534",
+      "entity_type": "1",
+      "entity_type_name": "Label",
+      "id": 681,
+      "resource_url": "https://api.discogs.com/labels/681"
+    },
+    {
+      "name": "Atlantic",
+      "catno": "Lps 200.2534",
+      "entity_type": "1",
+      "entity_type_name": "Label",
+      "id": 681,
+      "resource_url": "https://api.discogs.com/labels/681"
+    }
+  ],
+  "series": [],
+  "companies": [
+    {
+      "name": "Grabaciones Mundiales C.A.",
+      "catno": "",
+      "entity_type": "10",
+      "entity_type_name": "Manufactured By",
+      "id": 322374,
+      "resource_url": "https://api.discogs.com/labels/322374"
+    }
+  ],
+  "formats": [
+    {
+      "name": "Vinyl",
+      "qty": "1",
+      "descriptions": [
+        "LP",
+        "Album"
+      ]
+    }
+  ],
+  "data_quality": "Needs Vote",
+  "community": {
+    "have": 5,
+    "want": 257,
+    "rating": {
+      "count": 3,
+      "average": 4.33
+    },
+    "submitter": {
+      "username": "solarmusic",
+      "resource_url": "https://api.discogs.com/users/solarmusic"
+    },
+    "contributors": [
+      {
+        "username": "solarmusic",
+        "resource_url": "https://api.discogs.com/users/solarmusic"
+      },
+      {
+        "username": "InfinitoRecord",
+        "resource_url": "https://api.discogs.com/users/InfinitoRecord"
+      },
+      {
+        "username": "soulvibes88",
+        "resource_url": "https://api.discogs.com/users/soulvibes88"
+      }
+    ],
+    "data_quality": "Needs Vote",
+    "status": "Accepted"
+  },
+  "format_quantity": 1,
+  "date_added": "2011-12-11T17:28:42-08:00",
+  "date_changed": "2020-02-13T15:54:13-08:00",
+  "num_for_sale": 2,
+  "lowest_price": 30.0,
+  "master_id": 180595,
+  "master_url": "https://api.discogs.com/masters/180595",
+  "title": "Patrick Adams Presents Phreek",
+  "country": "Venezuela",
+  "released": "1978",
+  "released_formatted": "1978",
+  "identifiers": [],
+  "videos": [
+    {
+      "uri": "https://www.youtube.com/watch?v=DgotFnaij_w",
+      "title": "Patrick Adams Presents Phreek - May My Love Be With You 1978",
+      "description": "Funk disco music from the 70\u2019s. Please support the artist by purchasing their music!",
+      "duration": 262,
+      "embed": true
+    },
+    {
+      "uri": "https://www.youtube.com/watch?v=2Ccm6v1-axw",
+      "title": "Weekend",
+      "description": "Provided to YouTube by Warner Music Group\n\nWeekend \u00b7 Phreek (Patrick Adams Presents)\n\nPatrick Adams Presents Phreek\n\n\u2117 1978 Atlantic Recording Corp.\n\nPerformance: Phreek\nProducer: Leroy Burgess\nProducer: Patrick Adams\nArranger, Writer: Leroy Burgess\nAr",
+      "duration": 417,
+      "embed": true
+    },
+    {
+      "uri": "https://www.youtube.com/watch?v=yGc6BXBArVE",
+      "title": "Patrick Adams Presents Phreek \u200e\u2013 Everybody Loves A Good Thing \u2117 1978",
+      "description": "https://www.facebook.com/groove.passion/\nClass Action and Phreek were disco and post-disco musical projects. The original Phreek comprised Christine Wiltshire, Leroy Burgess, Patrick Adams, Stan Lucas, Ken Mazur and others. Class Action was directed by La",
+      "duration": 478,
+      "embed": true
+    },
+    {
+      "uri": "https://www.youtube.com/watch?v=DFAkLPW9JYY",
+      "title": "Patrick Adams presents - Phreek - May my love with you",
+      "description": "Monologue: Donna McGhee",
+      "duration": 258,
+      "embed": true
+    },
+    {
+      "uri": "https://www.youtube.com/watch?v=sF7diPe7EG8",
+      "title": "PHREEK - Much Too Much",
+      "description": "Patrick Adams Presents...",
+      "duration": 365,
+      "embed": true
+    },
+    {
+      "uri": "https://www.youtube.com/watch?v=M1Hi-fP9l5o",
+      "title": "Patrick Adams - I'm A Big Freak (R U 1 2)",
+      "description": "Patrick Adams - I'm A Big Freak (R U 1 2)\n\nBUY Discogs: http://www.discogs.com/artist/55592-Phreek\nBUY iTunes: https://itunes.apple.com/us/album/phreek-patrick-adams-presents/id296549349\nBUY amazon: http://www.amazon.com/Im-Big-Freak/dp/B001L61XC6\nBUY Jun",
+      "duration": 622,
+      "embed": true
+    },
+    {
+      "uri": "https://www.youtube.com/watch?v=0bhbPa_dtRQ",
+      "title": "Have a Good Day",
+      "description": "Provided to YouTube by Warner Music Group\n\nHave a Good Day \u00b7 Phreek\n\nPatrick Adams Presents Phreek\n\n\u2117 1978 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States.\n\nWriter: Patrick Adam",
+      "duration": 250,
+      "embed": true
+    }
+  ],
+  "genres": [
+    "Electronic",
+    "Funk / Soul"
+  ],
+  "styles": [
+    "Soul",
+    "Disco"
+  ],
+  "tracklist": [
+    {
+      "position": "A1",
+      "type_": "track",
+      "title": "Weekend",
+      "extraartists": [
+        {
+          "name": "Christine Wiltshire",
+          "anv": "Christie Shire",
+          "join": "",
+          "role": "Lead Vocals",
+          "tracks": "",
+          "id": 178790,
+          "resource_url": "https://api.discogs.com/artists/178790"
+        },
+        {
+          "name": "James Calloway",
+          "anv": "",
+          "join": "",
+          "role": "Written-By",
+          "tracks": "",
+          "id": 239996,
+          "resource_url": "https://api.discogs.com/artists/239996"
+        },
+        {
+          "name": "Leroy Burgess",
+          "anv": "",
+          "join": "",
+          "role": "Written-By",
+          "tracks": "",
+          "id": 32439,
+          "resource_url": "https://api.discogs.com/artists/32439"
+        }
+      ],
+      "duration": "6:49"
+    },
+    {
+      "position": "A2",
+      "type_": "track",
+      "title": "Everybody Loves A Good Thing",
+      "extraartists": [
+        {
+          "name": "Leroy Burgess",
+          "anv": "",
+          "join": "",
+          "role": "Lead Vocals",
+          "tracks": "",
+          "id": 32439,
+          "resource_url": "https://api.discogs.com/artists/32439"
+        },
+        {
+          "name": "Venus Dodson",
+          "anv": "",
+          "join": "",
+          "role": "Lead Vocals",
+          "tracks": "",
+          "id": 136518,
+          "resource_url": "https://api.discogs.com/artists/136518"
+        },
+        {
+          "name": "Leroy Burgess",
+          "anv": "",
+          "join": "",
+          "role": "Written-By",
+          "tracks": "",
+          "id": 32439,
+          "resource_url": "https://api.discogs.com/artists/32439"
+        },
+        {
+          "name": "Patrick Adams",
+          "anv": "",
+          "join": "",
+          "role": "Written-By",
+          "tracks": "",
+          "id": 28602,
+          "resource_url": "https://api.discogs.com/artists/28602"
+        }
+      ],
+      "duration": "7:56"
+    },
+    {
+      "position": "A3",
+      "type_": "track",
+      "title": "May My Love Be With You",
+      "extraartists": [
+        {
+          "name": "Donna McGhee",
+          "anv": "",
+          "join": "",
+          "role": "Voice [Monologue]",
+          "tracks": "",
+          "id": 83241,
+          "resource_url": "https://api.discogs.com/artists/83241"
+        },
+        {
+          "name": "Patrick Adams",
+          "anv": "",
+          "join": "",
+          "role": "Written-By",
+          "tracks": "",
+          "id": 28602,
+          "resource_url": "https://api.discogs.com/artists/28602"
+        },
+        {
+          "name": "Richie Weeks",
+          "anv": "Richard Weeks",
+          "join": "",
+          "role": "Written-By",
+          "tracks": "",
+          "id": 44270,
+          "resource_url": "https://api.discogs.com/artists/44270"
+        }
+      ],
+      "duration": "4:15"
+    },
+    {
+      "position": "B1",
+      "type_": "track",
+      "title": "Much Too Much",
+      "extraartists": [
+        {
+          "name": "Leroy Burgess",
+          "anv": "",
+          "join": "",
+          "role": "Lead Vocals",
+          "tracks": "",
+          "id": 32439,
+          "resource_url": "https://api.discogs.com/artists/32439"
+        },
+        {
+          "name": "James Calloway",
+          "anv": "",
+          "join": "",
+          "role": "Written-By",
+          "tracks": "",
+          "id": 239996,
+          "resource_url": "https://api.discogs.com/artists/239996"
+        },
+        {
+          "name": "Leroy Burgess",
+          "anv": "",
+          "join": "",
+          "role": "Written-By",
+          "tracks": "",
+          "id": 32439,
+          "resource_url": "https://api.discogs.com/artists/32439"
+        }
+      ],
+      "duration": "6:04"
+    },
+    {
+      "position": "B2",
+      "type_": "track",
+      "title": "I'm A Big Freak (R\u2022U\u20221\u20222)",
+      "extraartists": [
+        {
+          "name": "Patrick Adams",
+          "anv": "",
+          "join": "",
+          "role": "Written-By",
+          "tracks": "",
+          "id": 28602,
+          "resource_url": "https://api.discogs.com/artists/28602"
+        }
+      ],
+      "duration": "10:19"
+    },
+    {
+      "position": "B3",
+      "type_": "track",
+      "title": "Have A Good Day",
+      "extraartists": [
+        {
+          "name": "Patrick Adams",
+          "anv": "",
+          "join": "",
+          "role": "Written-By",
+          "tracks": "",
+          "id": 28602,
+          "resource_url": "https://api.discogs.com/artists/28602"
+        },
+        {
+          "name": "Venus Dodson",
+          "anv": "",
+          "join": "",
+          "role": "Written-By",
+          "tracks": "",
+          "id": 136518,
+          "resource_url": "https://api.discogs.com/artists/136518"
+        }
+      ],
+      "duration": "4:05"
+    }
+  ],
+  "extraartists": [
+    {
+      "name": "Leroy Burgess",
+      "anv": "",
+      "join": "",
+      "role": "Arranged By",
+      "tracks": "A1, B1",
+      "id": 32439,
+      "resource_url": "https://api.discogs.com/artists/32439"
+    },
+    {
+      "name": "Patrick Adams",
+      "anv": "",
+      "join": "",
+      "role": "Arranged By",
+      "tracks": "A1 to A3, B2, B3",
+      "id": 28602,
+      "resource_url": "https://api.discogs.com/artists/28602"
+    },
+    {
+      "name": "Sandi Young",
+      "anv": "",
+      "join": "",
+      "role": "Art Direction [Art Director]",
+      "tracks": "",
+      "id": 1881933,
+      "resource_url": "https://api.discogs.com/artists/1881933"
+    },
+    {
+      "name": "Christine Wiltshire",
+      "anv": "",
+      "join": "",
+      "role": "Backing Vocals",
+      "tracks": "",
+      "id": 178790,
+      "resource_url": "https://api.discogs.com/artists/178790"
+    },
+    {
+      "name": "Dorothy Terrell",
+      "anv": "",
+      "join": "",
+      "role": "Backing Vocals",
+      "tracks": "",
+      "id": 261884,
+      "resource_url": "https://api.discogs.com/artists/261884"
+    },
+    {
+      "name": "Gina Tharps",
+      "anv": "",
+      "join": "",
+      "role": "Backing Vocals",
+      "tracks": "",
+      "id": 334335,
+      "resource_url": "https://api.discogs.com/artists/334335"
+    },
+    {
+      "name": "Infinity (13)",
+      "anv": "",
+      "join": "",
+      "role": "Backing Vocals",
+      "tracks": "",
+      "id": 334339,
+      "resource_url": "https://api.discogs.com/artists/334339"
+    },
+    {
+      "name": "James Calloway",
+      "anv": "",
+      "join": "",
+      "role": "Backing Vocals",
+      "tracks": "",
+      "id": 239996,
+      "resource_url": "https://api.discogs.com/artists/239996"
+    },
+    {
+      "name": "Jocelyn Brown",
+      "anv": "",
+      "join": "",
+      "role": "Backing Vocals",
+      "tracks": "",
+      "id": 2264,
+      "resource_url": "https://api.discogs.com/artists/2264"
+    },
+    {
+      "name": "Judith Whitney",
+      "anv": "",
+      "join": "",
+      "role": "Backing Vocals",
+      "tracks": "",
+      "id": 334338,
+      "resource_url": "https://api.discogs.com/artists/334338"
+    },
+    {
+      "name": "Ken Morris",
+      "anv": "",
+      "join": "",
+      "role": "Backing Vocals",
+      "tracks": "",
+      "id": 128816,
+      "resource_url": "https://api.discogs.com/artists/128816"
+    },
+    {
+      "name": "Leroy Burgess",
+      "anv": "",
+      "join": "",
+      "role": "Backing Vocals",
+      "tracks": "",
+      "id": 32439,
+      "resource_url": "https://api.discogs.com/artists/32439"
+    },
+    {
+      "name": "Pete Warner",
+      "anv": "",
+      "join": "",
+      "role": "Backing Vocals",
+      "tracks": "",
+      "id": 126084,
+      "resource_url": "https://api.discogs.com/artists/126084"
+    },
+    {
+      "name": "Richie Weeks",
+      "anv": "Richard Weeks",
+      "join": "",
+      "role": "Backing Vocals",
+      "tracks": "",
+      "id": 44270,
+      "resource_url": "https://api.discogs.com/artists/44270"
+    },
+    {
+      "name": "Roberta Moore",
+      "anv": "",
+      "join": "",
+      "role": "Backing Vocals",
+      "tracks": "",
+      "id": 334336,
+      "resource_url": "https://api.discogs.com/artists/334336"
+    },
+    {
+      "name": "Norbert Sloley",
+      "anv": "",
+      "join": "",
+      "role": "Bass [Fender Bass]",
+      "tracks": "",
+      "id": 236010,
+      "resource_url": "https://api.discogs.com/artists/236010"
+    },
+    {
+      "name": "Michael Lewis (3)",
+      "anv": "Mike Lewis",
+      "join": "",
+      "role": "Congas, Percussion",
+      "tracks": "",
+      "id": 534234,
+      "resource_url": "https://api.discogs.com/artists/534234"
+    },
+    {
+      "name": "Jeff Delinko",
+      "anv": "",
+      "join": "",
+      "role": "Contractor",
+      "tracks": "",
+      "id": 236011,
+      "resource_url": "https://api.discogs.com/artists/236011"
+    },
+    {
+      "name": "Richard Taninbaum",
+      "anv": "",
+      "join": "",
+      "role": "Drums",
+      "tracks": "",
+      "id": 149385,
+      "resource_url": "https://api.discogs.com/artists/149385"
+    },
+    {
+      "name": "Bob Blank",
+      "anv": "",
+      "join": "",
+      "role": "Engineer",
+      "tracks": "",
+      "id": 90562,
+      "resource_url": "https://api.discogs.com/artists/90562"
+    },
+    {
+      "name": "Bob Clearmountain",
+      "anv": "",
+      "join": "",
+      "role": "Engineer",
+      "tracks": "",
+      "id": 11415,
+      "resource_url": "https://api.discogs.com/artists/11415"
+    },
+    {
+      "name": "Neil Dorfsman",
+      "anv": "",
+      "join": "",
+      "role": "Engineer",
+      "tracks": "",
+      "id": 253235,
+      "resource_url": "https://api.discogs.com/artists/253235"
+    },
+    {
+      "name": "Raymond Willard",
+      "anv": "",
+      "join": "",
+      "role": "Engineer [Assistant]",
+      "tracks": "",
+      "id": 334340,
+      "resource_url": "https://api.discogs.com/artists/334340"
+    },
+    {
+      "name": "Patrick Adams",
+      "anv": "",
+      "join": "",
+      "role": "Engineer [Mixing]",
+      "tracks": "",
+      "id": 28602,
+      "resource_url": "https://api.discogs.com/artists/28602"
+    },
+    {
+      "name": "Ken Mazur",
+      "anv": "",
+      "join": "",
+      "role": "Guitar",
+      "tracks": "",
+      "id": 236005,
+      "resource_url": "https://api.discogs.com/artists/236005"
+    },
+    {
+      "name": "Stan Lucas",
+      "anv": "",
+      "join": "",
+      "role": "Guitar",
+      "tracks": "",
+      "id": 128817,
+      "resource_url": "https://api.discogs.com/artists/128817"
+    },
+    {
+      "name": "Todd Schorr",
+      "anv": "",
+      "join": "",
+      "role": "Illustration",
+      "tracks": "",
+      "id": 724818,
+      "resource_url": "https://api.discogs.com/artists/724818"
+    },
+    {
+      "name": "Leroy Burgess",
+      "anv": "",
+      "join": "",
+      "role": "Keyboards, Synthesizer",
+      "tracks": "",
+      "id": 32439,
+      "resource_url": "https://api.discogs.com/artists/32439"
+    },
+    {
+      "name": "Patrick Adams",
+      "anv": "",
+      "join": "",
+      "role": "Keyboards, Synthesizer",
+      "tracks": "",
+      "id": 28602,
+      "resource_url": "https://api.discogs.com/artists/28602"
+    },
+    {
+      "name": "Leroy Burgess",
+      "anv": "",
+      "join": "",
+      "role": "Producer",
+      "tracks": "A1, B1",
+      "id": 32439,
+      "resource_url": "https://api.discogs.com/artists/32439"
+    },
+    {
+      "name": "Patrick Adams",
+      "anv": "",
+      "join": "",
+      "role": "Producer",
+      "tracks": "",
+      "id": 28602,
+      "resource_url": "https://api.discogs.com/artists/28602"
+    },
+    {
+      "name": "Babe Clark",
+      "anv": "Babe Clarke",
+      "join": "",
+      "role": "Strings, Brass",
+      "tracks": "",
+      "id": 358129,
+      "resource_url": "https://api.discogs.com/artists/358129"
+    }
+  ],
+  "images": [
+    {
+      "type": "primary",
+      "uri": "",
+      "resource_url": "",
+      "uri150": "",
+      "width": 600,
+      "height": 515
+    },
+    {
+      "type": "secondary",
+      "uri": "",
+      "resource_url": "",
+      "uri150": "",
+      "width": 600,
+      "height": 518
+    }
+  ],
+  "thumb": "",
+  "estimated_weight": 230,
+  "blocked_from_sale": false
+}

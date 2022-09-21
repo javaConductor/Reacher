@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<GridPane xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.demo.jfx2.DiscogsReleaseUIController"
+      fx:id="gridTrackList"
+      alignment="CENTER" hgap="10" vgap="10"
+>
+  <!-- Row 0 -->
+  <Button fx:id="btnSearch" mnemonicParsing="false" text="Search"
+          GridPane.columnIndex="0"
+          GridPane.rowIndex="0"
+          GridPane.columnSpan="1"
+
+  />
+  <Text fx:id="textSearchReleaseId"
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="0"
+        GridPane.columnSpan="1"
+        GridPane.hgrow="ALWAYS"
+        fill="silver"
+        text="Hello World"
+
+        />
+
+  <!-- Row 1 -->
+  <Label text="Release ID:"
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="1"
+        GridPane.columnSpan="1"
+        />
+  <Text fx:id="textReleaseId"
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="1"
+        GridPane.columnSpan="1"
+  />
+
+  <!-- Row 2 -->
+  <Label text="Artist:"
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="2"
+        GridPane.columnSpan="1"
+        />
+  <Text fx:id="textArtist"
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="2"
+        GridPane.columnSpan="1"
+  />
+
+  <!-- Row 3 -->
+  <Label text="Title:"
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="3"
+        GridPane.columnSpan="1"
+        />
+  <Text fx:id="textTitle"
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="3"
+        GridPane.columnSpan="1"
+  />
+
+
+  <!-- Row 4 -->
+  <Label text="Year:"
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="4"
+        GridPane.columnSpan="1"
+        />
+  <Text fx:id="textYear"
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="4"
+        GridPane.columnSpan="1"
+  />
+
+
+
+  <TableView fx:id="trackListTable"
+             GridPane.hgrow="ALWAYS"
+             GridPane.columnIndex="0"
+             GridPane.columnSpan="2"
+             GridPane.rowIndex="5">
+    <columns>
+      <TableColumn text="Track No" fx:id="trackNoColumn">
+      </TableColumn>
+      <TableColumn text="Title"  fx:id="titleColumn">
+      </TableColumn>
+    </columns>
+  </TableView>
+
+
+</GridPane>
