@@ -6,6 +6,7 @@ import javafx.application.HostServices;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
@@ -36,6 +37,9 @@ public class DiscogsReleaseUIController {
   public Text textYear;
   @FXML
   public TableView<DiscogsReleasesResponse> tableTrackList;
+  @FXML
+  Label errorMessage;
+
   ApplicationContext context;
   @Autowired
   NodePopulator<GridPane, DiscogsReleasesResponse> nodePopulator;
@@ -50,14 +54,23 @@ public class DiscogsReleaseUIController {
   public void initialize() {
 
     this.btnSearch.setOnAction(this::handleSearch);
+//    this.errorMessage.setStyle("");
 
   }
 
-  void handleSearch(ActionEvent actionEvent) {
+  void handleSearch(ActionEvent actionEvent)  {
     String searchText = StringUtils.trim(this.textSearchReleaseId.getText());
-    if (StringUtils.isNumeric(searchText)) {
-      DiscogsReleasesResponse response = discogsService.getReleaseInfo(Integer.decode(searchText));
-      nodePopulator.populate(gridTrackList, response);
+    try {
+      if (StringUtils.isNumeric(searchText)) {
+        DiscogsReleasesResponse response = discogsService.getReleaseInfo(Integer.decode(searchText));
+        nodePopulator.populate(gridTrackList, response);
+      }
+    } catch (Exception e) {
+      showError(e.getMessage());
     }
+  }
+
+  private void showError(String message) {
+    this.errorMessage.setText(message);
   }
 }

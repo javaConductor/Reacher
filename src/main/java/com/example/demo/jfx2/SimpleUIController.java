@@ -29,7 +29,7 @@ public class SimpleUIController {
   @FXML
   public void initialize() {
       this.btnDiscogsReleases.setOnAction(actionEvent -> {
-        this.content.getChildren().removeAll();
+        this.content.getChildren().retainAll();
         this.content.getChildren().add(discogsRelease);
     });
   }

@@ -22,7 +22,7 @@
         GridPane.columnSpan="1"
         GridPane.hgrow="ALWAYS"
         fill="silver"
-        text="Hello World"
+        text="1"
 
         />
 
@@ -76,7 +76,7 @@
   />
 
 
-
+  <!-- Row 5 -->
   <TableView fx:id="trackListTable"
              GridPane.hgrow="ALWAYS"
              GridPane.columnIndex="0"
@@ -90,5 +90,12 @@
     </columns>
   </TableView>
 
+  <!-- Row 6 -->
+  <Label fx:id="errorMessage"
+         text="Year:"
+         GridPane.columnIndex="0"
+         GridPane.rowIndex="6"
+         GridPane.columnSpan="1"
+  />
 
 </GridPane>

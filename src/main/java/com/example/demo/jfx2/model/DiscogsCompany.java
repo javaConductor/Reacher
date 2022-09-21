@@ -1,7 +1,11 @@
 package com.example.demo.jfx2.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class DiscogsCompany {
   String name;
   String catno;

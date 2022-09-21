@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.net.URI;
 import java.net.URL;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -17,6 +18,9 @@ public class DiscogsReleasesResponse {
 
   @JsonProperty("resource_url")
   URL resourceUrl;
+
+  @JsonProperty("uri")
+  URI uri;
   List<DiscogsArtist> artists;
 
   @JsonProperty("artists_sort")
