@@ -4,10 +4,11 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 <GridPane xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.example.demo.jfx2.DiscogsReleaseUIController"
-      fx:id="gridTrackList"
-      alignment="CENTER" hgap="10" vgap="10"
+          fx:controller="com.example.demo.jfx2.DiscogsReleaseUIController"
+          fx:id="gridTrackList"
+          alignment="CENTER" hgap="10" vgap="10"
 >
   <!-- Row 0 -->
   <Button fx:id="btnSearch" mnemonicParsing="false" text="Search"
@@ -16,14 +17,14 @@
           GridPane.columnSpan="1"
 
   />
-  <Text fx:id="textSearchReleaseId"
+  <TextArea fx:id="textSearchReleaseId"
         GridPane.columnIndex="1"
         GridPane.rowIndex="0"
         GridPane.columnSpan="1"
         GridPane.hgrow="ALWAYS"
-        fill="silver"
-        text="Hello World"
-
+        text="1"
+        GridPane.fillWidth="200"
+        disable="false"
         />
 
   <!-- Row 1 -->
@@ -76,19 +77,71 @@
   />
 
 
+  <!-- Row 5 -->
+  <Label text="Genres:"
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="5"
+        GridPane.columnSpan="1"
+        />
+  <Text fx:id="textGenres"
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="5"
+        GridPane.columnSpan="1"
+  />
 
+
+  <!-- Row 6 -->
+  <Label text="Styles:"
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="6"
+        GridPane.columnSpan="1"
+        />
+  <Text fx:id="textStyles"
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="6"
+        GridPane.columnSpan="1"
+  />
+
+
+  <!-- Row 7 -->
+  <Label text="Country:"
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="7"
+        GridPane.columnSpan="1"
+        />
+  <Text fx:id="textCountry"
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="7"
+        GridPane.columnSpan="1"
+  />
+
+
+  <!-- Row 8 -->
   <TableView fx:id="trackListTable"
              GridPane.hgrow="ALWAYS"
              GridPane.columnIndex="0"
              GridPane.columnSpan="2"
-             GridPane.rowIndex="5">
+             GridPane.rowIndex="8">
     <columns>
-      <TableColumn text="Track No" fx:id="trackNoColumn">
+      <TableColumn text="Title" fx:id="titleColumn" prefWidth="400" >
+        <cellValueFactory>
+          <PropertyValueFactory property="title" />
+        </cellValueFactory>
       </TableColumn>
-      <TableColumn text="Title"  fx:id="titleColumn">
+      <TableColumn text="Duration"  fx:id="durationColumn" prefWidth="60">
+        <cellValueFactory>
+          <PropertyValueFactory property="duration" />
+        </cellValueFactory>
       </TableColumn>
     </columns>
   </TableView>
 
+  <!-- Row 9 -->
+  <Label fx:id="errorMessage"
+         text=""
+         GridPane.columnIndex="0"
+         GridPane.rowIndex="9"
+         GridPane.columnSpan="2"
+  />
 
 </GridPane>

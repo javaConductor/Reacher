@@ -1,10 +1,13 @@
 package com.example.demo.jfx2.config;
 
-
 import com.example.demo.jfx2.JavaFxApplication;
 import com.example.demo.jfx2.NodePopulator;
 import com.example.demo.jfx2.model.DiscogsReleaseTrack;
 import com.example.demo.jfx2.model.DiscogsReleasesResponse;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
 import com.sun.javafx.collections.ObservableListWrapper;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.JavaFXBuilderFactory;
@@ -21,6 +24,8 @@ import org.springframework.context.annotation.Scope;
 
 import java.net.URL;
 import java.nio.charset.Charset;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Configuration
@@ -52,7 +57,7 @@ public class UIConfig {
       @Override
       public Node populate(TableView node, List<DiscogsReleaseTrack> data) {
         ObservableListWrapper<DiscogsReleaseTrack> olw = new ObservableListWrapper<DiscogsReleaseTrack>(data);
-        olw.addAll(data);
+        //olw.addAll(data);
         node.setItems(olw);
         return node;
       }
@@ -66,6 +71,7 @@ public class UIConfig {
       @Override
       public Node populate(GridPane node, DiscogsReleasesResponse data) {
         node.getChildren().stream()
+          .filter(child -> child.getId() != null)
           .forEach(child -> {
 
             switch (child.getId()) {
@@ -86,6 +92,21 @@ public class UIConfig {
                 ((Text) child).setText("" + data.getYear());
                 break;
 
+
+              case "textCountry":
+                ((Text) child).setText("" + data.getCountry());
+                break;
+
+
+              case "textGenres":
+                ((Text) child).setText("" + data.getGenres().toString());
+                break;
+
+
+              case "textStyles":
+                ((Text) child).setText("" + data.getStyles().toString());
+                break;
+
               case "trackListTable":
                 trackListPopulator.populate((TableView) child, data.getTracklist());
                 break;
@@ -97,6 +118,18 @@ public class UIConfig {
         return node;
       }
     };
+  }
+
+  @Bean
+  public ObjectMapper objectMapper(){
+    ObjectMapper mapper = new ObjectMapper();
+    JavaTimeModule javaTimeModule=new JavaTimeModule();
+    // Hack time module to allow 'Z' at the end of string (i.e. javascript json's)
+    javaTimeModule.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(DateTimeFormatter.ISO_DATE_TIME));
+    mapper.registerModule(javaTimeModule);
+    mapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
+    return mapper;
+
   }
 
   public Node loadFxml(String fxmlFile) throws Exception {
