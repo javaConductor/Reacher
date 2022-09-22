@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.cell.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.text.Text?>
-<?import javafx.scene.control.cell.PropertyValueFactory?>
 <GridPane xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
           fx:controller="com.example.demo.jfx2.DiscogsReleaseUIController"
           fx:id="gridTrackList"
@@ -128,10 +128,14 @@
           <PropertyValueFactory property="title" />
         </cellValueFactory>
       </TableColumn>
-      <TableColumn text="Duration"  fx:id="durationColumn" prefWidth="60">
-        <cellValueFactory>
-          <PropertyValueFactory property="duration" />
+      <TableColumn text="Duration"  fx:id="durationColumn" prefWidth="60" style="-fx-wrap-text: true;-fx-text-alignment: right">
+        <cellValueFactory >
+          <PropertyValueFactory property="duration"  />
         </cellValueFactory>
+
+      </TableColumn>
+      <TableColumn text="Additional Artists" fx:id="artistsColumn" prefWidth="400" >
+
       </TableColumn>
     </columns>
   </TableView>
