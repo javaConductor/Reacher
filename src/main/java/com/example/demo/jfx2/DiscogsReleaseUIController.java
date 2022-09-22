@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import org.apache.commons.lang3.StringUtils;
@@ -26,7 +27,7 @@ public class DiscogsReleaseUIController {
   @FXML
   public Button btnSearch;
   @FXML
-  public Text textSearchReleaseId;
+  public TextArea textSearchReleaseId;
   @FXML
   public Text textReleaseId;
   @FXML
@@ -55,6 +56,11 @@ public class DiscogsReleaseUIController {
 
     this.btnSearch.setOnAction(this::handleSearch);
 //    this.errorMessage.setStyle("");
+    this.textSearchReleaseId.setDisable(false);
+    this.textArtist.setDisable(false);
+    this.textTitle.setDisable(false);
+    this.textYear.setDisable(false);
+
 
   }
 
