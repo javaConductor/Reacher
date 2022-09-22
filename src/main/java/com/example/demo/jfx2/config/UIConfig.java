@@ -9,6 +9,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
 import com.sun.javafx.collections.ObservableListWrapper;
+import javafx.collections.FXCollections;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Node;
@@ -56,9 +57,7 @@ public class UIConfig {
     return new NodePopulator<TableView, java.util.List<DiscogsReleaseTrack>>() {
       @Override
       public Node populate(TableView node, List<DiscogsReleaseTrack> data) {
-        ObservableListWrapper<DiscogsReleaseTrack> olw = new ObservableListWrapper<DiscogsReleaseTrack>(data);
-        //olw.addAll(data);
-        node.setItems(olw);
+        node.setItems(FXCollections.observableList(data));
         return node;
       }
     };
