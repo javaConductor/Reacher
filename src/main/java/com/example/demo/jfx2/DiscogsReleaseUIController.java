@@ -6,7 +6,6 @@ import com.example.demo.jfx2.model.DiscogsReleasesResponse;
 import com.example.demo.jfx2.services.DiscogsService;
 import javafx.application.HostServices;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.effect.InnerShadow;
@@ -74,30 +73,12 @@ public class DiscogsReleaseUIController {
     this.textYear.setDisable(false);
     styleButton(btnSearch);
 
-// and setCellFactory
-    Callback fn = new Callback<TableColumn<DiscogsReleaseTrack, List<DiscogsArtist>>, TableCell<DiscogsReleaseTrack, List<DiscogsArtist>>>() {
-
-      @Override
-      public TableCell<DiscogsReleaseTrack, List<DiscogsArtist>> call(TableColumn<DiscogsReleaseTrack, List<DiscogsArtist>> param) {
-        return new TableCell<DiscogsReleaseTrack, List<DiscogsArtist>>() {
-          @Override
-          protected void updateItem(List<DiscogsArtist> item, boolean empty) {
-
-            //super.updateItem(item, empty);
-            if (empty || item == null) {
-              if (!empty)
-                setText("nothing");
-              setGraphic(null);
-            } else {
-              setText(item.toString());
-            }
-          }
-        };
-      }
-    };
+    // and setCellFactory
+    Callback<TableColumn<DiscogsReleaseTrack, List<DiscogsArtist>>, TableCell<DiscogsReleaseTrack, List<DiscogsArtist>>> fn = (Callback<TableColumn<DiscogsReleaseTrack, List<DiscogsArtist>>, TableCell<DiscogsReleaseTrack, List<DiscogsArtist>>>) param -> new ArtistCell();
     artistsColumn.setCellFactory((Callback<TableColumn<DiscogsReleaseTrack, List<DiscogsArtist>>, TableCell<DiscogsReleaseTrack, List<DiscogsArtist>>>)fn);
 
   }
+
 
   void handleSearch(ActionEvent actionEvent) {
     String searchText = StringUtils.trim(this.textSearchReleaseId.getText());
@@ -125,4 +106,20 @@ public class DiscogsReleaseUIController {
     btn.setFont(Font.font(null, FontWeight.BOLD, 20));
   }
 
+  class ArtistCell extends TableCell<DiscogsReleaseTrack, List<DiscogsArtist>>{
+    @Override
+    protected void updateItem(List<DiscogsArtist> trackArtists, boolean empty) {
+
+      super.updateItem(trackArtists, empty);
+      if (empty || trackArtists == null) {
+        if (!empty)
+          setText("nothing");
+        setGraphic(null);
+      } else {
+        setText(trackArtists.stream()
+          .map(discogsArtist -> (discogsArtist.getRole() + ": " + discogsArtist.getName()))
+          .collect(Collectors.joining(" | ")));
+      }
+    }
+  }
 }
