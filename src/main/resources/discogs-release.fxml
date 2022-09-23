@@ -135,13 +135,16 @@
 
       </TableColumn>
       <TableColumn text="Additional Artists" fx:id="artistsColumn" prefWidth="400" >
-
+        <cellValueFactory >
+          <PropertyValueFactory property="extraArtists"  />
+        </cellValueFactory>
       </TableColumn>
     </columns>
   </TableView>
 
   <!-- Row 9 -->
   <Label fx:id="errorMessage"
+         style="-fx-border-color: red;-fx-text-alignment: right"
          text=""
          GridPane.columnIndex="0"
          GridPane.rowIndex="9"
