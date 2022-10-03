@@ -6,7 +6,7 @@
 <?import javafx.scene.text.*?>
 
 <GridPane xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
-          fx:controller="com.example.demo.jfx2.DiscogsReleaseUIController"
+          fx:controller="org.collins.reacher.DiscogsReleaseUIController"
           fx:id="gridTrackList"
           alignment="CENTER" hgap="10" vgap="10"
 >
@@ -22,10 +22,16 @@
         GridPane.rowIndex="0"
         GridPane.columnSpan="1"
         GridPane.hgrow="ALWAYS"
-        text="1"
+        text="257719"
         GridPane.fillWidth="200"
         disable="false"
         />
+  <Button fx:id="btnSave" mnemonicParsing="false" text="Save"
+          GridPane.columnIndex="2"
+          GridPane.rowIndex="0"
+          GridPane.columnSpan="1"
+
+  />
 
   <!-- Row 1 -->
   <Label text="Release ID:"
@@ -40,37 +46,36 @@
   />
 
   <!-- Row 2 -->
-  <Label text="Artist:"
+  <Label text="Master Release ID:"
         GridPane.columnIndex="0"
         GridPane.rowIndex="2"
         GridPane.columnSpan="1"
         />
-  <Text fx:id="textArtist"
+  <Text fx:id="textMasterReleaseId"
         GridPane.columnIndex="1"
         GridPane.rowIndex="2"
         GridPane.columnSpan="1"
   />
 
   <!-- Row 3 -->
-  <Label text="Title:"
+  <Label text="Artist:"
         GridPane.columnIndex="0"
         GridPane.rowIndex="3"
         GridPane.columnSpan="1"
         />
-  <Text fx:id="textTitle"
+  <Text fx:id="textArtist"
         GridPane.columnIndex="1"
         GridPane.rowIndex="3"
         GridPane.columnSpan="1"
   />
 
-
   <!-- Row 4 -->
-  <Label text="Year:"
+  <Label text="Title:"
         GridPane.columnIndex="0"
         GridPane.rowIndex="4"
         GridPane.columnSpan="1"
         />
-  <Text fx:id="textYear"
+  <Text fx:id="textTitle"
         GridPane.columnIndex="1"
         GridPane.rowIndex="4"
         GridPane.columnSpan="1"
@@ -78,12 +83,12 @@
 
 
   <!-- Row 5 -->
-  <Label text="Genres:"
+  <Label text="Year:"
         GridPane.columnIndex="0"
         GridPane.rowIndex="5"
         GridPane.columnSpan="1"
         />
-  <Text fx:id="textGenres"
+  <Text fx:id="textYear"
         GridPane.columnIndex="1"
         GridPane.rowIndex="5"
         GridPane.columnSpan="1"
@@ -91,12 +96,12 @@
 
 
   <!-- Row 6 -->
-  <Label text="Styles:"
+  <Label text="Genres:"
         GridPane.columnIndex="0"
         GridPane.rowIndex="6"
         GridPane.columnSpan="1"
         />
-  <Text fx:id="textStyles"
+  <Text fx:id="textGenres"
         GridPane.columnIndex="1"
         GridPane.rowIndex="6"
         GridPane.columnSpan="1"
@@ -104,12 +109,12 @@
 
 
   <!-- Row 7 -->
-  <Label text="Country:"
+  <Label text="Styles:"
         GridPane.columnIndex="0"
         GridPane.rowIndex="7"
         GridPane.columnSpan="1"
         />
-  <Text fx:id="textCountry"
+  <Text fx:id="textStyles"
         GridPane.columnIndex="1"
         GridPane.rowIndex="7"
         GridPane.columnSpan="1"
@@ -117,13 +122,26 @@
 
 
   <!-- Row 8 -->
+  <Label text="Country:"
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="8"
+        GridPane.columnSpan="1"
+        />
+  <Text fx:id="textCountry"
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="8"
+        GridPane.columnSpan="1"
+  />
+
+
+  <!-- Row 9 -->
   <TableView fx:id="trackListTable"
              GridPane.hgrow="ALWAYS"
              GridPane.columnIndex="0"
              GridPane.columnSpan="2"
-             GridPane.rowIndex="8">
+             GridPane.rowIndex="9">
     <columns>
-      <TableColumn text="Title" fx:id="titleColumn" prefWidth="400" >
+      <TableColumn text="Title" fx:id="titleColumn" prefWidth="200" >
         <cellValueFactory>
           <PropertyValueFactory property="title" />
         </cellValueFactory>
@@ -134,7 +152,13 @@
         </cellValueFactory>
 
       </TableColumn>
-      <TableColumn text="Additional Artists" fx:id="artistsColumn" prefWidth="400" >
+      <TableColumn text="Artists" fx:id="artistsColumn" prefWidth="350" >
+        <cellValueFactory >
+          <PropertyValueFactory property="artists"  />
+        </cellValueFactory>
+      </TableColumn>
+
+      <TableColumn text="Additional Artists" fx:id="extraArtistsColumn" prefWidth="350" >
         <cellValueFactory >
           <PropertyValueFactory property="extraArtists"  />
         </cellValueFactory>
@@ -142,12 +166,12 @@
     </columns>
   </TableView>
 
-  <!-- Row 9 -->
-  <Label fx:id="errorMessage"
+  <!-- Row 10 -->
+  <TextArea fx:id="errorMessage"
          style="-fx-border-color: red;-fx-text-alignment: right"
          text=""
          GridPane.columnIndex="0"
-         GridPane.rowIndex="9"
+         GridPane.rowIndex="10"
          GridPane.columnSpan="2"
   />
 

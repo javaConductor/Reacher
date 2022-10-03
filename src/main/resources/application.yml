@@ -1,0 +1,22 @@
+spring:
+  main:
+    web-application-type: none
+  application:
+    ui:
+      title: Reacher Application
+
+reacher-sources:
+  discogs:
+    user: ElishyahIsrael
+    token: QLuWLCeELOYLpwLDsWDtMoiUFZyaKamnqPGjxnpn
+    url: https://api.discogs.com
+    local_repository: /Users/lcollins2/.reacher/discogs
+
+
+logging:
+  level:
+    com:
+      example:
+        demo:
+          jfx2: DEBUG
+    org.springframework.security: DEBUG
