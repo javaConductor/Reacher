@@ -22,7 +22,10 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Slf4j
@@ -146,12 +149,30 @@ public class DiscogsReleaseUIController {
           setGraphic(null);
         }
       } else {
-        setText(trackArtists.stream()
-          .map(discogsArtist -> {
-            return StringUtils.isEmpty(discogsArtist.getRole()) ? discogsArtist.getName() : discogsArtist.getRole() + ": " + discogsArtist.getName();
-          })
-          .collect(Collectors.joining(" | ")));
+        String artistString = createArtistString(trackArtists);
+        setText(artistString);
       }
+    }
+
+    private String createArtistString(List<DiscogsArtist> trackArtists) {
+      Map<String, List<String>> roleData = new HashMap<>();
+      trackArtists.forEach(discogsArtist -> {
+        List<String> names = roleData.get(discogsArtist.getRole());
+        if (names == null){
+          names = new ArrayList<>();
+        }
+        names.add(discogsArtist.getName());
+        roleData.put(discogsArtist.getRole(), names);
+      });
+      StringBuilder sb = new StringBuilder();
+      roleData.forEach((role, nameList) -> {
+        sb.append(role);
+        sb.append(": ");
+        String s = nameList.stream().collect(Collectors.joining(", "));
+        sb.append(s);
+        sb.append(" | ");
+      } );
+      return sb.toString();
     }
   }
 }
