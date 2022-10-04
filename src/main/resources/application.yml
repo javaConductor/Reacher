@@ -10,7 +10,7 @@ reacher-sources:
     user: ElishyahIsrael
     token: QLuWLCeELOYLpwLDsWDtMoiUFZyaKamnqPGjxnpn
     url: https://api.discogs.com
-    local_repository: /Users/lcollins2/.reacher/discogs
+    local_repository: C:\Users\Lee\Workspace\discogs data
 
 
 logging:
